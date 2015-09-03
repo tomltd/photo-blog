@@ -5,19 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta id="theme-color" name="theme-color" content="#307699">
   <!-- sets colour theme for chrome on andriod-->
-  <!-- ADD AN ICON TOM -->
+  <meta id="theme-color" name="theme-color" content="#307699">
+  <link rel="icon" type="image/png" href="images/paper_plane.png">
   <base target="_blank">
-
   <title>Tom Freestone responsive photo blog</title>
-
   <!-- Fonts -->
   <link href='//fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/zocial.css" />
   <!-- css -->
   <link rel="stylesheet" href="css/main.css" />
-
+  <!-- SMOOTH SCROLL -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
 </head>
 
 <body>
@@ -28,9 +44,8 @@
         <h1>Toms Travel Photos</h1></div>
     </div>
   </header>
-
+<h2><a href="#canada">Canada</a><a href=#nz>New Zealand</a><a href="#nam">Namibia</a><a href="#social-flourish">Social</a></h2>
   <article>
-
 
     <!-- This image source needs updating -->
     <picture>
@@ -39,7 +54,7 @@
       <img src="images/still-life-small.jpg" alt="A Beautiful Still life scene with fruit">
     </picture>
 
-    <h2>Canada 2015</h2>
+    <h2 id="canada">Canada 2015</h2>
 
     <p>I love cheese, especially manchego swiss. &#128513; Fromage queso jarlsberg cheesy feet emmental cottage cheese camembert de normandie bocconcini. Cottage cheese everyone loves cauliflower cheese rubber cheese squirty cheese halloumi cow fondue. Bocconcini
       cheese and biscuits everyone loves fondue red leicester st. agur blue cheese rubber cheese ricotta. Cheesy grin mozzarella.</p>
@@ -92,7 +107,7 @@
 
     <p>St. agur blue cheese cheese and wine say cheese. Goat cottage cheese brie cheese triangles say cheese when the cheese comes out everybody's happy stinking bishop dolcelatte. Parmesan say cheese cream cheese goat cauliflower cheese st. agur blue cheese
       cheese slices hard cheese. Cheese triangles.</p>
-    <h2>New Zealand 2013</h2>
+    <h2 id="nz">New Zealand 2013</h2>
     <figure>
       <picture>
         <source media="(min-width: 750px)" srcset="images/nz-1-1600-large-x2.jpg 2x, images/nz-1-800-large-x1.jpg" />
@@ -114,7 +129,7 @@
     </figure>
     <p>Babybel cream cheese cheese on toast. Brie fromage swiss cheese and biscuits hard cheese babybel bocconcini brie. Cheesy grin swiss cheese strings paneer lancashire cauliflower cheese cheese on toast caerphilly. Queso queso cheese and wine taleggio
       mascarpone cheeseburger.</p>
-    <h2>Namibia 2010</h2>
+    <h2 id="nam">Namibia 2010</h2>
     <figure>
       <picture>
         <source media="(min-width: 750px)" srcset="images/nam-1-1600-large-x2.jpg 2x, images/nam-1-800-large-x1.jpg" />
@@ -150,19 +165,15 @@
   </article>
 
   <footer>
-
     <p id="social-flourish">s🔥cial</p>
-
     <div id="social-icons">
       <a href="https://plus.google.com/u/1/115930322572572288999" class="zocial googleplus">Google+</a>
       <a href="https://www.facebook.com/tomfreestone" class="zocial facebook">Facebook</a>
       <a href="https://twitter.com/tomltd#" class="zocial twitter">Twitter</a>
       <a href="https://github.com/tomltd/photo-blog" class="zocial github">Github</a>
-
     </div>
   </footer>
-
-
+  
 </body>
 
 </html>
