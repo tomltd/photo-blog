@@ -36,7 +36,6 @@
   text-decoration: underline;
   color: #212121;
 }
-
 /*
  *
  * Top Level Navigation End
@@ -54,79 +53,69 @@
 
 .papa-kiwi {
   width: 200px;
-  margin-left:40px;
-  margin-bottom:10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
 }
 
 body {
-font-family: 'Lato', sans-serif;
-font-weight: 400;
-max-width:50em;
-margin-left: auto;
-margin-right: auto;
-
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-article {
+article {}
 
+figcaption {
+  color: #00AA72;
 }
-
-figcaption{
-  color:#00AA72;
-}
-
 
 h1 {
-color:#00AA72;
-font-weight: 300;
-padding-right: 40px;
+  color: #00AA72;
+  font-weight: 300;
+  padding-right: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h2 {
-color:#00AA72;
-font-weight: 300;
-padding-left: 5px;
+  color: #00AA72;
+  font-weight: 300;
+  padding-left: 5px;
 }
 
-
-
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 p {
   padding: 0 10px 0 10px;
-  color:#616161;
+  color: #616161;
 }
 
-
-
-
 figcaption {
-	text-align: right;
+  text-align: right;
   padding-right: 10px;
 }
 
-
 #header-text {
-	text-align:right;
-	margin-top:100px;
+  text-align: right;
+  margin-top: 100px;
 }
 
-
-#social-icons
-{
-	text-align: center;
+#social-icons {
+  text-align: center;
 }
 
-#social-flourish
-{
-	font-weight: 300;
-	text-transform: uppercase;
-	text-align:center;
-	font-size:50px;
-	margin-bottom:5px;
-	color:#00AA72;
+#social-flourish {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #00AA72;
 }
 
 a {
@@ -136,16 +125,14 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #212121;
 }
 
-#top-link
-{
-	text-align: center;
+#top-link {
+  text-align: center;
 }
 
-.bottom
-{
+.bottom {
   margin-bottom: 50px;
 }
