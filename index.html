@@ -1,25 +1,24 @@
 <!DOCTYPE html>
+<!--A quick demo blog featuring srcset images for different resolutions including a x2 high res set for retina type displays. Also includes cropped images at smaller page widths to demonstrate art direction.
+The header includes an SVG file which can be easily manipulated for different media types. I have used icon fonts and css icons to minimise the total size of the site for devices on restricted bandwidths.
+I have also included a small JQuery script to add smooth scrolling to jump between anchors.-->
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <!-- sets colour theme for chrome on andriod-->
-  <meta id="theme-color" name="theme-color" content="#307699">
-  <link rel="icon" type="image/png" href="images/paper_plane.png">
-  <base target="_blank">
+  <meta id="theme-color" name="theme-color" content="#307699">              <!--Sets colour theme for chrome on andriod devices-->
+  <link rel="icon" type="image/png" href="images/paper_plane.png">          <!--Sets the bookmark/tab icon-->
+  <base target="_blank">                                                    <!--Specifies a default target for all hyperlinks-->
   <title>Tom Freestone responsive photo blog</title>
   <!-- Fonts -->
   <link href='//fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-  <!--<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
   <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/zocial.css" />
-  <!-- css -->
-  <link rel="stylesheet" href="css/main.css" />
-  <!-- SMOOTH SCROLL -->
+  <link rel="stylesheet" href="css/zocial.css" />                           <!--This css is used to create the social media icons-->
+  <link rel="stylesheet" href="css/main.css" />                             <!--My css. This would be minified with grunt in production-->
+  <!-- SMOOTH SCROLL JS -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>
     $(function() {
@@ -43,9 +42,9 @@
 <body>
   <header>
     <div id="header-container">
-      <div><img class="papa-kiwi" src="http://s.cdpn.io/3/kiwi.svg" alt="Kiwi Logo SVG file"></div>
+      <div><img class="papa-kiwi" id="top" src="http://s.cdpn.io/3/kiwi.svg" alt="Kiwi Logo SVG file"></div>
       <div id="header-text">
-        <h1 id="top">Toms Travel Photos</h1></div>
+        <h1>Toms Travel Photos</h1></div>
     </div>
   </header>
 
@@ -77,7 +76,6 @@
 
     <p class="bottom">This Black bear was hanging out in Jasper National Park. The bears in the National Parks are very mild manored as they are used to the tourist traffic. In total we spotted 8 bears and had a close encounter with a couple of bears who were having a
       picnic in the woods.</p>
-
 
     <figure>
       <picture>
@@ -144,7 +142,7 @@
       </picture>
       <figcaption>Pelican Squadron</figcaption>
     </figure>
-    <p class="bottom">I took this photo ib a boat trip at Walvis bay. These guys flew right past the boat. Other things we saw included a friendly seal who jumped on board and the worlds largest diamond vacuum.</p>
+    <p class="bottom">I took this photo in a boat trip at Walvis bay. These guys flew right past the boat. Other things we saw included a friendly seal who jumped on board and the worlds largest diamond vacuum.</p>
 
     <figure>
       <picture>
@@ -154,7 +152,7 @@
       </picture>
       <figcaption>Painting with light in Rundu</figcaption>
     </figure>
-    <p>Out last night in Rundu and I managed to assemble everyone for a photo. Needless to say this took a few attempts but we got there in the end!</p>
+    <p>Our last night in Rundu and I managed to assemble everyone for a photo. Needless to say this took a few attempts but we got there in the end!</p>
 
 
   </article>
@@ -171,5 +169,4 @@
   </footer>
 
 </body>
-
 </html>
