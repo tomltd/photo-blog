@@ -1,6 +1,6 @@
 /*
  *
- * Top Level Navigation
+ * Navigation
  *
  */
 
@@ -29,7 +29,7 @@
 .nav a {
   text-decoration: none;
   color: #616161;
-  padding: 1.5em;
+  padding: 1.5em; /*adds padding for touch screens*/
 }
 
 .nav a:hover {
@@ -38,7 +38,7 @@
 }
 /*
  *
- * Top Level Navigation End
+ * Navigation End
  *
  */
 
