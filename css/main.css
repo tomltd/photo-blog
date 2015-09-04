@@ -37,6 +37,12 @@
   color: #212121;
 }
 
+/*
+ *
+ * Top Level Navigation End
+ *
+ */
+
 #header-container {
   max-width: 100%;
 }
@@ -65,16 +71,24 @@ article {
 
 }
 
-h1, h2 {
-color:#00AA72;
-font-weight: 300;
+figcaption{
+  color:#00AA72;
 }
+
 
 h1 {
-
-    padding-right: 40px;
-
+color:#00AA72;
+font-weight: 300;
+padding-right: 40px;
 }
+
+h2 {
+color:#00AA72;
+font-weight: 300;
+padding-left: 5px;
+}
+
+
 
 img {
 	max-width: 100%;
@@ -82,6 +96,7 @@ img {
 
 p {
   padding: 0 10px 0 10px;
+  color:#616161;
 }
 
 
@@ -112,4 +127,25 @@ figcaption {
 	font-size:50px;
 	margin-bottom:5px;
 	color:#00AA72;
+}
+
+a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+#top-link
+{
+	text-align: center;
+}
+
+.bottom
+{
+  margin-bottom: 50px;
 }
