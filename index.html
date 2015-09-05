@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!--A quick demo blog featuring srcset images for different resolutions including a x2 high res set for retina type displays. 
+<!--A quick demo blog featuring srcset images for different resolutions including a x2 high res set for retina type displays.
+This could also be achieved with media queries in the css
 Also includes cropped images at smaller page widths to demonstrate art direction.
-The header includes an SVG file which can be easily manipulated for different media types. 
+The header includes an SVG file which can be easily manipulated for different media types.
 I have used icon fonts and css icons to minimise the total size of the site for devices on restricted bandwidths.
 I have also included a small JQuery script to add smooth scrolling to jump between anchors.-->
 <html>
@@ -70,7 +71,8 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/canada-1-1600-large-x2.jpg 2x, images/canada-1-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/canada-1-800-medium-x1.jpg" />
-        <img src="images/canada-1-small.jpg" alt="A black bear chilling, spotted near lake Moraine">
+        <source media="(max-width: 499px)" srcset="images/canada-1-small.jpg" />
+        <img src="images/canada-1-1600-large-x2.jpg" alt="A black bear hanging out">
       </picture>
       <figcaption>A black bear spotted chilling</figcaption>
     </figure>
@@ -78,11 +80,15 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
     <p class="bottom">This Black bear was hanging out in Jasper National Park. The bears in the National Parks are very mild manored as they are used to the tourist traffic. In total we spotted 8 bears and had a close encounter with a couple of bears who were having a
       picnic in the woods.</p>
 
+
+
+
     <figure>
       <picture>
         <source media="(min-width: 750px)" srcset="images/canada-2-1600-large-x2.jpg 2x, images/canada-2-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/canada-2-800-medium-x1.jpg" />
-        <img src="images/canada-2-small.jpg" alt="Low flying search and rescue helicopter just outside Vancouver">
+        <source media="(max-width: 499px)" srcset="images/canada-2-small.jpg" />
+        <img src="images/canada-2-1600-large-x2.jpg" alt="Low flying search and rescue helicopter just outside Vancouver">
       </picture>
       <figcaption>Search and Rescue helicopter</figcaption>
     </figure>
@@ -93,7 +99,8 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/canada-3-1600-large-x2.jpg 2x, images/canada-3-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/canada-3-800-medium-x1.jpg" />
-        <img src="images/canada-3-small.jpg" alt="The beautiful Sulphur Skyline in Jasper Nation Park AB">
+        <source media="(max-width: 499px)" srcset="images/canada-3-small.jpg" />
+        <img src="images/canada-3-1600-large-x2.jpg" alt="The beautiful Sulphur Skyline in Jasper Nation Park AB">
       </picture>
       <figcaption>A storm rolling in from the Sulphur Skyline</figcaption>
     </figure>
@@ -107,7 +114,8 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/nz-1-1600-large-x2.jpg 2x, images/nz-1-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/nz-1-800-medium-x1.jpg" />
-        <img src="images/nz-1-small.jpg" alt="A Friendly Kea, the worlds only mountain parrot">
+        <source media="(max-width: 499px)" srcset="images/nz-1-small.jpg" />
+        <img src="images/nz-1-1600-large-x2.jpg" alt="A Friendly Kea, the worlds only mountain parrot">
       </picture>
       <figcaption>A friendly Kea swoops in for a visit</figcaption>
     </figure>
@@ -118,7 +126,8 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/nz-2-1600-large-x2.jpg 2x, images/nz-2-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/nz-2-800-medium-x1.jpg" />
-        <img src="images/nz-2-small.jpg" alt="A view of Lake Tekapo from the observatory">
+        <source media="(max-width: 499px)" srcset="images/nz-2-small.jpg" />
+        <img src="images/nz-2-1600-large-x2.jpg" alt="A view of Lake Tekapo from the observatory">
       </picture>
       <figcaption>A view of Lake Tekapo</figcaption>
     </figure>
@@ -129,18 +138,21 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/nam-1-1600-large-x2.jpg 2x, images/nam-1-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/nam-1-800-medium-x1.jpg" />
-        <img src="images/nam-1-small.jpg" alt="Namibian Springbok">
+        <source media="(max-width: 499px)" srcset="images/nam-1-small.jpg" />
+
+        <img src="images/nam-1-1600-large-x2.jpg" alt="Namibian Springbok">
       </picture>
       <figcaption>A heard of Namibian Springbok</figcaption>
     </figure>
     <p class="bottom">In December 2010 we visited Namibia. This is another country with a tiny population to area ratio and also great for looking at the night sky. Above you can see a heard of tasty springbok. One thing not to be missed is the vast range of game meats
       to try.</p>
-   
+
     <figure>
       <picture>
         <source media="(min-width: 750px)" srcset="images/nam-2-1600-large-x2.jpg 2x, images/nam-2-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/nam-2-800-medium-x1.jpg" />
-        <img src="images/nam-2-small.jpg" alt="A bunch of Pelicans do a fly-by">
+        <source media="(max-width: 499px)" srcset="images/nam-2-small.jpg" />
+        <img src="images/nam-2-1600-large-x2.jpg" alt="A bunch of Pelicans do a fly-by">
       </picture>
       <figcaption>Pelican Squadron</figcaption>
     </figure>
@@ -150,7 +162,8 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
       <picture>
         <source media="(min-width: 750px)" srcset="images/nam-3-1600-large-x2.jpg 2x, images/nam-3-800-large-x1.jpg" />
         <source media="(min-width: 500px)" srcset="images/nam-3-800-medium-x1.jpg" />
-        <img src="images/nam-3-small.jpg" alt="Painting with light">
+        <source media="(max-width: 499px)" srcset="images/nam-3-small.jpg" />
+        <img src="images/nam-3-1600-large-x2.jpg" alt="Painting with light">
       </picture>
       <figcaption>Painting with light in Rundu</figcaption>
     </figure>
