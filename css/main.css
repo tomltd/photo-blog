@@ -37,6 +37,40 @@
   color: #212121;
 }
 /*
+@media only screen and (max-device-width: 480px) {
+      #show-mobile {
+        display: block;
+      }
+      #hide-moblie {
+        display: none;
+      }
+    }
+
+ @media only screen and (min-device-width: 481px) {
+      #show-mobile {
+        display: none;
+      }
+      #hide-moblie {
+        display: block;
+      }
+    }
+*/
+@media (max-width: 480px) {
+  #canada a span:after { content: 'can' }
+  #nz a span:after { content: 'nz' }
+  #namibia a span:after { content: 'nam' }
+  #social a span:after { content: 'me' }
+
+}
+
+@media (min-width: 481px) {
+  #canada a span:after { content: 'canada' }
+  #nz a span:after { content: 'aotearoa' }
+  #namibia a span:after { content: 'namibia' }
+  #social a span:after { content: 'social' }
+
+}
+/*
  *
  * Navigation End
  *
