@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <!--A quick demo blog featuring srcset images for different resolutions including a x2 high res set for retina type displays.
-This could also be achieved with media queries in the css.
 Also includes cropped images at smaller page widths to demonstrate art direction.
+I have used a media querie to change the menu content
 The header includes an SVG file which can be easily manipulated for different media types.
 I have used icon fonts and css icons to minimise the total size of the site for devices on restricted bandwidths.
-I have also included a small JQuery script to add smooth scrolling to jump between anchors.-->
+There is a small JQuery script to add smooth scrolling to jump between anchors.
+I used grunt with the responsive images package to automate the creation of my various image resolutions
+The project has been stored on github using the CLI-->
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta id="theme-color" name="theme-color" content="#307699">              <!--Sets colour theme for chrome on andriod devices-->
-  <link rel="icon" type="image/png" href="images/paper_plane.png">          <!--Sets the bookmark/tab icon-->
-  <base target="_blank">                                                    <!--Specifies a default target for all hyperlinks-->
+  <meta id="theme-color" name="theme-color" content="#307699">
+  <!--Sets colour theme for chrome on andriod devices-->
+  <link rel="icon" type="image/png" href="images/paper_plane.png">
+  <!--Sets the bookmark/tab icon-->
+  <base target="_blank">
+  <!--Specifies a default target for all hyperlinks-->
   <title>Tom Freestone responsive photo blog</title>
   <!-- Fonts -->
   <link href='//fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/zocial.css" />                           <!--This css is used to create the social media icons-->
-  <link rel="stylesheet" href="css/main.css" />                             <!--My css. This would be minified with grunt in production-->
+  <link rel="stylesheet" href="css/zocial.css" />
+  <!--This css is used to create the social media icons-->
+  <link rel="stylesheet" href="css/main.css" />
+  <!--My css. This would be minified with grunt in production-->
   <!-- SMOOTH SCROLL JS -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>
@@ -54,10 +61,10 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
 
   <nav class="nav">
     <ul class="nav__list">
-      <li class="nav__item" id="canada"><a href="#canada"><span></span></a></li>
-      <li class="nav__item" id="nz"><a href="#nz"><span></span></a></li>
-      <li class="nav__item" id="namibia"><a href="#nam"><span></span></a></li>
-      <li class="nav__item" id="social"><a href="#social-flourish"><span></span></a></li>
+      <li class="nav__item" id="canada-nav"><a href="#canada"><span></span></a></li>
+      <li class="nav__item" id="nz-nav"><a href="#nz"><span></span></a></li>
+      <li class="nav__item" id="namibia-nav"><a href="#nam"><span></span></a></li>
+      <li class="nav__item" id="social-nav"><a href="#social-flourish"><span></span></a></li>
     </ul>
   </nav>
 
@@ -80,9 +87,6 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
 
     <p class="bottom">This Black bear was hanging out in Jasper National Park. The bears in the National Parks are very mild manored as they are used to the tourist traffic. In total we spotted 8 bears and had a close encounter with a couple of bears who were having a
       picnic in the woods.</p>
-
-
-
 
     <figure>
       <picture>
@@ -179,10 +183,11 @@ I have also included a small JQuery script to add smooth scrolling to jump betwe
     <div id="social-icons">
       <a href="https://plus.google.com/u/1/115930322572572288999" class="zocial googleplus">Google+</a>
       <a href="https://www.facebook.com/tomfreestone" class="zocial facebook">Facebook</a>
-      <a href="https://twitter.com/tomltd#" class="zocial twitter">Twitter</a>
+      <a href="https://twitter.com/tomltd" class="zocial twitter">Twitter</a>
       <a href="https://github.com/tomltd/photo-blog" class="zocial github">Github</a>
     </div>
   </footer>
 
 </body>
+
 </html>
