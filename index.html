@@ -31,6 +31,14 @@ The project has been stored on github using the CLI-->
   <!-- SMOOTH SCROLL JS -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>
+  $(document).ready(function() {
+
+		//	$('#panel1').slideUp(1300).show(2000);
+		//	$('ul').slideUp(1300).show(2000);
+		$('body').hide().fadeIn(2200);
+});
+  
+  
     $(function() {
    $('a[href*=#]:not([href=#])').click(function() {
      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
