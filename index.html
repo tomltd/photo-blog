@@ -33,12 +33,14 @@ The project has been stored on github using the CLI-->
   <script>
   $(document).ready(function() {
 
-		//	$('#panel1').slideUp(1300).show(2000);
 		//	$('ul').slideUp(1300).show(2000);
-		$('body').hide().fadeIn(2200);
+    //  $('papa-kiwi').hide().slideDown(200);
+		$('header').hide().fadeIn(500);
+    $('article').hide().fadeIn(2200);
+
 });
-  
-  
+
+
     $(function() {
    $('a[href*=#]:not([href=#])').click(function() {
      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -64,7 +66,7 @@ The project has been stored on github using the CLI-->
       <div id="header-text">
         <h1>Toms Travel Photos</h1></div>
     </div>
-  </header>
+
 
 
   <nav class="nav">
@@ -75,7 +77,7 @@ The project has been stored on github using the CLI-->
       <li class="nav__item" id="social-nav"><a href="#social-flourish"><span></span></a></li>
     </ul>
   </nav>
-
+  </header>
 
   <article>
 
