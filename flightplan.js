@@ -5,7 +5,7 @@ plan.target('production', [
   {
     host: 'ssh.tomfreestone.co.uk',
     username: 'tomfreestone.co.uk',
-    port: 2222,
+    port: 22,
     agent: process.env.SSH_AUTH_SOCK
   },
 ]);
