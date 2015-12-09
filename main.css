@@ -1,0 +1,138 @@
+/*
+ *
+ * Navigation
+ *
+ */
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase; }
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+  /*adds padding for touch screens*/ }
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121; }
+
+@media (max-width: 499px) {
+  #canada-nav a span:after {
+    content: "can"; }
+
+  #nz-nav a span:after {
+    content: "nz"; }
+
+  #namibia-nav a span:after {
+    content: "nam"; }
+
+  #social-nav a span:after {
+    content: "@"; } }
+@media (min-width: 500px) {
+  #canada-nav a span:after {
+    content: "canada"; }
+
+  #nz-nav a span:after {
+    content: "aotearoa"; }
+
+  #namibia-nav a span:after {
+    content: "namibia"; }
+
+  #social-nav a span:after {
+    content: "social"; } }
+/*
+ *
+ * Navigation End
+ *
+ */
+#header-container {
+  max-width: 100%; }
+
+#header-container div {
+  float: left;
+  width: 50%; }
+
+.papa-kiwi {
+  width: 200px;
+  margin-left: 40px;
+  margin-bottom: 10px; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto; }
+
+figcaption {
+  color: #00AA72; }
+
+h1 {
+  color: #00AA72;
+  font-weight: 300;
+  padding-right: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive; }
+
+h2 {
+  color: #00AA72;
+  font-weight: 300;
+  padding-left: 40px; }
+
+img {
+  max-width: 100%; }
+
+p {
+  padding: 0 40px 0 40px;
+  color: #616161; }
+
+figcaption {
+  text-align: right;
+  padding-right: 10px; }
+
+#header-text {
+  text-align: right;
+  margin-top: 100px; }
+
+#social-icons {
+  text-align: center; }
+
+#social-flourish {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 5px;
+  color: #00AA72; }
+
+a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em; }
+
+a:hover {
+  text-decoration: none;
+  color: #212121; }
+
+#top-link {
+  padding-left: 40px; }
+
+.bottom {
+  margin-bottom: 50px; }
