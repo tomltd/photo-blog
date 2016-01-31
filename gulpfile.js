@@ -13,12 +13,12 @@ gulp.task('styles', function() {
 
   ];
 
-  return gulp.src('styles.css')
+  return gulp.src('css/*.css')
       .pipe(postcss(processors))
       .pipe(cssnano())
       .pipe(gulp.dest('./dest'));
 });
 
 gulp.task('watch:styles', function(){
-  gulp.watch('**/*.css', ['styles']);
+  gulp.watch('css/*.css', ['styles']);
 });
