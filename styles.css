@@ -1,11 +1,18 @@
 $blue: #465gdf;
 
+@define-mixin hello {
+  margin: 0 auto;
+}
+
 .morris {
   display: flex;
   border-radius: 50%;
   transform: translate(10px);
   h1 {
     color: $blue;
+  }
+  section {
+    @mixin hello;
   }
 }
 

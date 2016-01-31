@@ -3,6 +3,8 @@ var postcss = require('gulp-postcss');
 var sass = require('gulp-sass');
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
+var cssnano = require('gulp-cssnano');
+
 
 gulp.task('styles', function() {
   var processors = [
@@ -13,6 +15,7 @@ gulp.task('styles', function() {
 
   return gulp.src('styles.css')
       .pipe(postcss(processors))
+      .pipe(cssnano())
       .pipe(gulp.dest('./dest'));
 });
 
