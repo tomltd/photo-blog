@@ -1,0 +1,13 @@
+{
+  "name": "Photo-Blog",
+  "version": "0.1.0",
+  "author": "Tom Freestone",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-postcss": "*",
+    "gulp-sass": "*",
+    "precss": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssnano": "*"
+  }
+}
