@@ -39,6 +39,9 @@
 }
 
 @media (max-width: 499px) {
+  #colorado-nav a span:after {
+    content: 'us';
+  }
   #canada-nav a span:after {
     content: 'can'
   }
@@ -54,6 +57,9 @@
 }
 
 @media (min-width: 500px) {
+  #colorado-nav a span:after {
+    content: 'colorado';
+  }
   #canada-nav a span:after {
     content: 'canada'
   }
