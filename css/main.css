@@ -176,3 +176,9 @@ a:hover {
 .bottom {
   margin-bottom: 50px;
 }
+
+#blog-switch,
+#photo-switch {
+  text-align: right;
+  margin-top: 20px;
+}
